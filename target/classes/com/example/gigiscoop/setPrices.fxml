@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="792.0" prefWidth="1327.0" style="-fx-background-color: #9fa695;" stylesheets="@../../../css/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gigiscoop.SetEditPriceController">
+   <children>
+      <ImageView fitHeight="185.0" fitWidth="1342.0" layoutX="-8.0">
+         <image>
+            <Image url="@../../../../../../../../Users/Brand/OneDrive/Pictures/barn.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="TOP_CENTER" layoutX="162.0" layoutY="209.0" prefHeight="57.0" prefWidth="1030.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#switchToCustomers" prefHeight="50.0" prefWidth="200.0" text="Customers">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Imprint MT Shadow" size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#switchToSales" prefHeight="50.0" prefWidth="200.0" text="Sales">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Imprint MT Shadow" size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#switchToFlock" prefHeight="50.0" prefWidth="200.0" text="The Flock">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Imprint MT Shadow" size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#switchToPricing" prefHeight="50.0" prefWidth="200.0" text="Pricing">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Imprint MT Shadow" size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#switchToExpenses" prefHeight="50.0" prefWidth="200.0" text="Expenses">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Imprint MT Shadow" size="24.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </HBox>
+      <Label alignment="CENTER" ellipsisString="" layoutX="24.0" layoutY="35.0" prefHeight="114.0" prefWidth="1305.0" text="Set/Edit Prices" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Imprint MT Shadow" size="96.0" />
+         </font>
+      </Label>
+      <Button layoutX="1217.0" layoutY="17.0" mnemonicParsing="false" onAction="#logout" prefHeight="35.0" prefWidth="95.0" text="Log Out">
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <font>
+            <Font name="Imprint MT Shadow" size="18.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="436.0" layoutY="281.0" prefHeight="88.0" prefWidth="454.0" style="-fx-border-color: black; -fx-border-radius: 0; -fx-border-width: 5;">
+         <children>
+            <HBox alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="37.0" prefWidth="430.0">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="194.0" text="Group Selection" textFill="WHITE">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="breedSelector" prefHeight="36.0" prefWidth="245.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <Button layoutX="104.0" layoutY="53.0" mnemonicParsing="false" onAction="#loadPrices" prefHeight="9.0" prefWidth="245.0" text="Load Group">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <font>
+                  <Font name="Imprint MT Shadow" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="405.0" layoutY="46.0" prefHeight="46.0" prefWidth="34.0" text="1.">
+               <font>
+                  <Font name="Imprint MT Shadow" size="36.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="43.0" layoutY="396.0" prefHeight="57.0" prefWidth="245.0" text="Current Prices" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Imprint MT Shadow" size="36.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Label layoutX="1094.0" layoutY="396.0" prefHeight="57.0" prefWidth="196.0" text="New Prices" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Imprint MT Shadow" size="36.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <AnchorPane layoutX="43.0" layoutY="454.0" prefHeight="231.0" prefWidth="567.0" style="-fx-border-color: black; -fx-border-radius: 0; -fx-border-width: 5;">
+         <children>
+            <VBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="238.0" prefWidth="414.0">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="350.0" text="Hatching Eggs" textFill="WHITE">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="36.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label prefHeight="46.0" prefWidth="350.0" text="Pullets/Cockerels" textFill="WHITE">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="36.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label prefHeight="46.0" prefWidth="350.0" text="Chicks" textFill="WHITE">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="36.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label prefHeight="46.0" prefWidth="350.0" text="Eating Eggs * 12" textFill="WHITE">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="36.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label prefHeight="46.0" prefWidth="350.0" text="Eating Eggs * 6" textFill="WHITE">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="36.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" layoutX="419.0" layoutY="14.0" prefHeight="238.0" prefWidth="129.0">
+               <children>
+                  <Label fx:id="hatchEggLabel" prefHeight="46.0" prefWidth="126.0" text="\$0" textFill="WHITE">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="36.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label fx:id="pulletLabel" prefHeight="46.0" prefWidth="126.0" text="\$0" textFill="WHITE">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="36.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label fx:id="chickLabel" prefHeight="46.0" prefWidth="126.0" text="\$0" textFill="WHITE">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="36.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label fx:id="egg12Label" prefHeight="46.0" prefWidth="126.0" text="\$0" textFill="WHITE">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="36.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label fx:id="egg6Label" prefHeight="46.0" prefWidth="126.0" text="\$0" textFill="WHITE">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="36.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+               </children>
+            </VBox>
+            <Label layoutX="566.0" layoutY="207.0" prefHeight="46.0" prefWidth="34.0" text="2.">
+               <font>
+                  <Font name="Imprint MT Shadow" size="36.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button layoutX="529.0" layoutY="730.0" mnemonicParsing="false" onAction="#changePrices" prefHeight="48.0" prefWidth="294.0" text="Set/Edit Prices">
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <font>
+            <Font name="Imprint MT Shadow" size="36.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="677.0" layoutY="454.0" prefHeight="245.0" prefWidth="586.0" style="-fx-border-color: black; -fx-border-radius: 0; -fx-border-width: 5;">
+         <children>
+            <VBox alignment="CENTER_LEFT" layoutX="14.0" layoutY="14.0" prefHeight="238.0" prefWidth="414.0">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="350.0" text="Hatching Eggs" textFill="WHITE">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="36.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label prefHeight="46.0" prefWidth="350.0" text="Pullets/Cockerels" textFill="WHITE">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="36.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label prefHeight="46.0" prefWidth="350.0" text="Chicks" textFill="WHITE">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="36.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label prefHeight="46.0" prefWidth="350.0" text="Eating Eggs * 12" textFill="WHITE">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="36.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+                  <Label prefHeight="46.0" prefWidth="350.0" text="Eating Eggs * 6" textFill="WHITE">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="36.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" layoutX="367.0" layoutY="15.0" prefHeight="238.0" prefWidth="157.0">
+               <children>
+                  <TextField fx:id="hatchEggBox" promptText="\$12.00">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="pulletBox" promptText="\$35.00">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="chickBox" promptText="\$5.00">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="egg12Box" promptText="\$3.5">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="egg6Box" promptText="\$2.5">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <Label layoutX="566.0" layoutY="206.0" prefHeight="46.0" prefWidth="34.0" text="3.">
+               <font>
+                  <Font name="Imprint MT Shadow" size="36.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="breedNameLabel" alignment="CENTER" layoutX="292.0" layoutY="384.0" prefHeight="66.0" prefWidth="758.0" text="&quot;Chicken Group&quot;" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Imprint MT Shadow" size="36.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToPricing" prefHeight="35.0" prefWidth="95.0" styleClass="background" stylesheets="@../../../css/style.css" text="Back">
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <font>
+            <Font name="Imprint MT Shadow" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

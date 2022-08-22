@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="786.0" prefWidth="1327.0" style="-fx-background-color: #9fa695;" stylesheets="@../../../css/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gigiscoop.LoginController">
+   <children>
+      <ImageView fitHeight="185.0" fitWidth="1342.0" layoutX="-8.0">
+         <image>
+            <Image url="@../../../../../../../../Users/Brand/OneDrive/Pictures/barn.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" ellipsisString="" layoutX="24.0" layoutY="35.0" prefHeight="114.0" prefWidth="1305.0" text="Gigi's Coop" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Imprint MT Shadow" size="96.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="268.0" fitWidth="197.0" layoutX="1130.0" layoutY="544.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/logoCoop.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="268.0" fitWidth="197.0" layoutY="544.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/logoCoop.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="298.0" layoutY="328.0" prefHeight="175.0" prefWidth="247.0">
+         <children>
+            <Label text="Username:" textFill="WHITE">
+               <font>
+                  <Font name="Imprint MT Shadow" size="48.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" top="15.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="Password:" textFill="WHITE">
+               <font>
+                  <Font name="Imprint MT Shadow" size="48.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" top="15.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="565.0" layoutY="328.0" prefHeight="184.0" prefWidth="490.0">
+         <children>
+            <TextField fx:id="username" prefHeight="60.0" prefWidth="490.0">
+               <VBox.margin>
+                  <Insets bottom="14.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Imprint MT Shadow" size="32.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password" prefHeight="44.0" prefWidth="490.0">
+               <VBox.margin>
+                  <Insets bottom="14.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Imprint MT Shadow" size="32.0" />
+               </font>
+            </PasswordField>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+      <Button layoutX="516.0" layoutY="613.0" mnemonicParsing="false" onAction="#loginPageSuccess" prefHeight="50.0" prefWidth="321.0" text="Log In">
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <font>
+            <Font name="Imprint MT Shadow" size="36.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
