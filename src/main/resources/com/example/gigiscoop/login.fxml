@@ -15,7 +15,7 @@
    <children>
       <ImageView fitHeight="185.0" fitWidth="1342.0" layoutX="-8.0">
          <image>
-            <Image url="@../../../../../../../../Users/Brand/OneDrive/Pictures/barn.jpg" />
+            <Image url="@../../../images/barn.jpg" />
          </image>
       </ImageView>
       <Label alignment="CENTER" ellipsisString="" layoutX="24.0" layoutY="35.0" prefHeight="114.0" prefWidth="1305.0" text="Gigi's Coop" textAlignment="CENTER" textFill="WHITE">

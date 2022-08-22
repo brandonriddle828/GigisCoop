@@ -13,7 +13,7 @@
    <children>
       <ImageView fitHeight="185.0" fitWidth="1342.0" layoutX="-8.0">
          <image>
-            <Image url="@../../../../../../../../Users/Brand/OneDrive/Pictures/barn.jpg" />
+            <Image url="@../../../images/barn.jpg" />
          </image>
       </ImageView>
       <HBox alignment="TOP_CENTER" layoutX="162.0" layoutY="209.0" prefHeight="57.0" prefWidth="1030.0">
