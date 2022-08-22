@@ -34,7 +34,7 @@ public class Driver extends Application
         Scene scene = new Scene(root, Color.BLACK);
         primaryStage.setTitle("Gigi's Coop");
         primaryStage.setResizable(false);
-        File file = new File("src/main/resources/images/gigiIcon.png");
+        File file = new File("target/classes/images/logoCoop.png");
         Image image = new Image(file.toURI().toString());
         primaryStage.getIcons().add(image);
         primaryStage.setScene(scene);
