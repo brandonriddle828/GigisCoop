@@ -38,12 +38,12 @@ public class LoginController implements Initializable
         users = new ArrayList<>();
         Users gina = new Users("Gina", "6776","ginariddle1967");
         Users brandon = new Users("Brandon","Roxysdad828!","brandonriddle828");
-        Users trial = new Users("trial","1","1");
+        // trial = new Users("trial","1","1");
 
         Users loginUser = null;
         users.add(gina);
         users.add(brandon);
-        users.add(trial);
+        //users.add(trial);
 
 
 
