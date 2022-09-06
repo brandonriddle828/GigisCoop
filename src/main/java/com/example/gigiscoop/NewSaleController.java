@@ -30,7 +30,7 @@ public class NewSaleController implements Initializable
 
     String url = ("jdbc:mysql://localhost:3306/gigiscoop");
     String username = ("root");
-    String password = ("Roxysdad828!");
+    String password = ("password");
 
 
     @FXML
