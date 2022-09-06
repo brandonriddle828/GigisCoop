@@ -15,4 +15,3 @@ With this application she, the owner, is able to keep track of many things such 
 Feel Free to reach out and contact me at brandonriddle828@gmail.com
 if you have any questions or comments!
 
-#THANKS FOR STOPPING BY!!!
