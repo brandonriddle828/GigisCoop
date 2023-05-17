@@ -37,7 +37,7 @@ public class LoginController implements Initializable
     {
         users = new ArrayList<>();
         Users gina = new Users("Gina", "1","1");
-        Users brandon = new Users("Brandon","Roxysdad828!","brandonriddle828");
+        Users brandon = new Users("Brandon","1","1");
         // trial = new Users("trial","1","1");
 
         Users loginUser = null;
