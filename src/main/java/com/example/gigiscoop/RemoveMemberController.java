@@ -27,7 +27,7 @@ public class RemoveMemberController implements Initializable
 
     String url = ("jdbc:mysql://localhost:3306/gigiscoop");
     String username = ("root");
-    String password = ("password");
+    String password = ("Roxysdad828!");
 
     @FXML
     protected ComboBox breedSelector;
@@ -150,7 +150,8 @@ public class RemoveMemberController implements Initializable
                     try
                     {
 
-                        String query = "UPDATE Flock SET Hens = " + group.henNum + " - " + henCount.getText() + ",  Roosters = " + group.roosterNum + " - " + roosterCount.getText()  + "  WHERE flockID = "+ group.flockID +";";
+                        String query = "UPDATE Flock SET Hens = " + group.henNum + " - " + henCount.getText()
+                                + ",  Roosters = " + group.roosterNum + " - " + roosterCount.getText()  + "  WHERE flockID = "+ group.flockID +";";
                         PreparedStatement prepstate = connection.prepareStatement(query);
                         prepstate.execute();
 

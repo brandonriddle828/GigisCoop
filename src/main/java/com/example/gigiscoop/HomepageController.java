@@ -42,7 +42,7 @@ public class HomepageController implements Initializable
     {
         try
         {
-            Parent root = FXMLLoader.load(getClass().getResource("setPrices.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("fixedSetPrices.fxml"));
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
@@ -57,7 +57,7 @@ public class HomepageController implements Initializable
     {
         try
         {
-            Parent root = FXMLLoader.load(getClass().getResource("addMembers.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("fixedAddMember.fxml"));
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
@@ -72,7 +72,7 @@ public class HomepageController implements Initializable
     {
         try
         {
-            Parent root = FXMLLoader.load(getClass().getResource("removeMembers.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("fixedRemoveMember.fxml"));
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
@@ -89,7 +89,7 @@ public class HomepageController implements Initializable
     {
         try
         {
-            Parent root = FXMLLoader.load(getClass().getResource("viewFlock.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("fixedViewFlock.fxml"));
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
@@ -105,7 +105,7 @@ public class HomepageController implements Initializable
     {
         try
         {
-            Parent root = FXMLLoader.load(getClass().getResource("viewPastFlocks.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("fixedViewPastFlock.fxml"));
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
@@ -138,7 +138,7 @@ public class HomepageController implements Initializable
     {
         try
         {
-            Parent root = FXMLLoader.load(getClass().getResource("newGroup.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("fixedStartNewGroup.fxml"));
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
@@ -296,7 +296,7 @@ public class HomepageController implements Initializable
     {
         try
         {
-            Parent root = FXMLLoader.load(getClass().getResource("viewPrices.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("fixedViewPrices.fxml"));
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
@@ -360,7 +360,7 @@ public class HomepageController implements Initializable
     {
         try
         {
-            Parent root = FXMLLoader.load(getClass().getResource("newSale.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("fixedSale.fxml"));
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
@@ -376,7 +376,7 @@ public class HomepageController implements Initializable
     {
         try
         {
-            Parent root = FXMLLoader.load(getClass().getResource("yearlyEarnings.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("fixedYearlyEarnings.fxml"));
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
@@ -391,7 +391,7 @@ public class HomepageController implements Initializable
     {
         try
         {
-            Parent root = FXMLLoader.load(getClass().getResource("monthlyEarnings.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("fixedMonthlyEarnings.fxml"));
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
@@ -406,7 +406,7 @@ public class HomepageController implements Initializable
     {
         try
         {
-            Parent root = FXMLLoader.load(getClass().getResource("dateEarnings.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("fixedSpecificDateEarnings.fxml"));
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);

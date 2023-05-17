@@ -72,6 +72,7 @@ public class Sales
         this.chicks = chicks;
     }
 
+
     public int getEatingEggs12()
     {
         return eatingEggs12;

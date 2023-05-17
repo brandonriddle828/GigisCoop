@@ -112,7 +112,7 @@
                   <Insets bottom="10.0" top="10.0" />
                </VBox.margin>
             </Button>
-            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchToDateSearchSales" prefHeight="75.0" prefWidth="500.0" styleClass="background" stylesheets="@../../../css/style.css" text="Sales Between Dates" textAlignment="CENTER">
+            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#switchToDateSearchSales" prefHeight="75.0" prefWidth="500.0" styleClass="background" stylesheets="@../../../css/style.css" text="Specific Date Sales" textAlignment="CENTER">
                <font>
                   <Font name="Imprint MT Shadow" size="48.0" />
                </font>

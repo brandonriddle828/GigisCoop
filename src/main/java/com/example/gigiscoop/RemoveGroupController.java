@@ -30,7 +30,7 @@ public class RemoveGroupController implements Initializable
 
     String url = ("jdbc:mysql://localhost:3306/gigiscoop");
     String username = ("root");
-    String password = ("password");
+    String password = ("Roxysdad828!");
 
     @FXML
     protected ComboBox breedSelector;
@@ -94,7 +94,7 @@ public class RemoveGroupController implements Initializable
     {
         try
         {
-            Parent root = FXMLLoader.load(getClass().getResource("viewPastFlocks.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("fixedViewPastFlock.fxml"));
             stage = (Stage)((Node)event.getSource()).getScene().getWindow();
             scene = new Scene(root);
             stage.setScene(scene);
