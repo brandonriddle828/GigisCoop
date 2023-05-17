@@ -1,0 +1,1 @@
+"C:\Program Files\Java\jdk-18.0.2\bin\java.exe" --module-path "C:\Program Files\Java\javafx-sdk-18.0.1\lib" --add-modules javafx.controls,javafx.fxml,javafx.base,javafx.web --add-exports javafx.graphics/com.sun.javafx.sg.prism=ALL-UNNAMED -Dfile.encoding=windows-1252 -jar "C:\Programming Java\GigisCoop\out\artifacts\GigisCoop_jar\GigisCoop.jar"

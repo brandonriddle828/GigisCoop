@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="828.0" prefWidth="1327.0" style="-fx-background-color: #9fa695;" stylesheets="@../../../css/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gigiscoop.FixedSaleController">
+   <children>
+      <ImageView fitHeight="185.0" fitWidth="1342.0" layoutX="-8.0">
+         <image>
+            <Image url="@../../../images/barn.jpg" />
+         </image>
+      </ImageView>
+      <HBox alignment="TOP_CENTER" layoutX="162.0" layoutY="209.0" prefHeight="57.0" prefWidth="1030.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#switchToCustomers" prefHeight="50.0" prefWidth="200.0" text="Customers">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Imprint MT Shadow" size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#switchToSales" prefHeight="50.0" prefWidth="200.0" text="Sales">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Imprint MT Shadow" size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#switchToFlock" prefHeight="50.0" prefWidth="200.0" text="The Flock">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Imprint MT Shadow" size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#switchToPricing" prefHeight="50.0" prefWidth="200.0" text="Pricing">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Imprint MT Shadow" size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#switchToExpenses" prefHeight="50.0" prefWidth="200.0" text="Expenses">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Imprint MT Shadow" size="24.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+      </HBox>
+      <Label alignment="CENTER" ellipsisString="" layoutX="24.0" layoutY="35.0" prefHeight="114.0" prefWidth="1305.0" text="Add New Sale" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Imprint MT Shadow" size="96.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToSales" prefHeight="35.0" prefWidth="95.0" styleClass="background" stylesheets="@../../../css/style.css" text="Back">
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <font>
+            <Font name="Imprint MT Shadow" size="24.0" />
+         </font>
+      </Button>
+      <TableView fx:id="saleCart" editable="true" layoutX="7.0" layoutY="502.0" prefHeight="174.0" prefWidth="1313.0" style="-fx-border-color: black; -fx-border-width: 5;">
+         <columns>
+            <TableColumn id="idCol" fx:id="customerCol" prefWidth="200.0" text="Customer" />
+            <TableColumn id="idCol" fx:id="breedCol" prefWidth="200.0" text="Breed" />
+            <TableColumn id="fnameCol" fx:id="roosterCol" minWidth="0.0" prefWidth="100.0" text="Roosters" />
+            <TableColumn id="lnameCol" fx:id="henCol" minWidth="25.0" prefWidth="100.0" text="Hens" />
+            <TableColumn id="fnameCol" fx:id="pulletCol" minWidth="25.0" prefWidth="100.0" text="Pullets" />
+            <TableColumn id="fnameCol" fx:id="cockerelCol" minWidth="25.0" prefWidth="100.0" text="Cockerels" />
+            <TableColumn id="fnameCol" fx:id="chicksCol" minWidth="25.0" prefWidth="100.0" text="Chicks" />
+            <TableColumn id="fnameCol" fx:id="hatchEggCol" minWidth="0.0" prefWidth="100.0" text="Hatching Eggs" />
+            <TableColumn id="lnameCol" fx:id="egg12Col" minWidth="25.0" prefWidth="100.0" text="Eating Eggs * 12" />
+            <TableColumn id="lnameCol" fx:id="egg6Col" minWidth="25.0" prefWidth="100.0" text="Eating Eggs * 6" />
+            <TableColumn id="lnameCol" fx:id="costCol" minWidth="25.0" prefWidth="100.0" text="Total Cost" />
+         </columns>
+      </TableView>
+      <Button layoutX="1217.0" layoutY="17.0" mnemonicParsing="false" onAction="#logout" prefHeight="35.0" prefWidth="95.0" text="Log Out">
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding>
+         <font>
+            <Font name="Imprint MT Shadow" size="18.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="239.0" layoutY="748.0" prefHeight="73.0" prefWidth="876.0" style="-fx-border-color: black; -fx-border-width: 2; -fx-border-radius: 15;">
+         <children>
+            <HBox alignment="CENTER" layoutX="14.0" layoutY="15.0" prefHeight="36.0" prefWidth="500.0">
+               <children>
+                  <Label prefHeight="45.0" prefWidth="189.0" text="Sale Date" textFill="WHITE">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="36.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets right="25.0" />
+                     </HBox.margin>
+                  </Label>
+                  <DatePicker fx:id="saleDatePicker" prefHeight="36.0" prefWidth="196.0" />
+               </children>
+            </HBox>
+            <Button layoutX="603.0" layoutY="12.0" mnemonicParsing="false" onAction="#submitSale" prefHeight="50.0" prefWidth="200.0" text="Submit">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <font>
+                  <Font name="Imprint MT Shadow" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="7.0" layoutY="280.0" prefHeight="199.0" prefWidth="1313.0" style="-fx-border-color: Black; -fx-border-width: 0; -fx-border-radius: 15;">
+         <children>
+            <HBox alignment="CENTER" layoutX="719.0" layoutY="14.0" prefHeight="55.0" prefWidth="539.0">
+               <children>
+                  <Label prefHeight="43.0" prefWidth="368.0" text="Breed Selection" textFill="WHITE">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="36.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="breedSelector" prefHeight="36.0" prefWidth="250.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox layoutX="7.0" layoutY="75.0" prefHeight="57.0" prefWidth="1300.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="57.0" prefWidth="214.0" style="-fx-border-color: Black; -fx-border-radius: 0; -fx-border-width: 0;">
+                     <children>
+                        <Label prefHeight="45.0" prefWidth="79.0" text="Roosters" textFill="WHITE">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="20.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <TextField fx:id="roosterBox" prefHeight="30.0" prefWidth="50.0" promptText="0" text="0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="2.0" right="2.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="57.0" prefWidth="185.0" style="-fx-border-color: Black; -fx-border-radius: 0; -fx-border-width: 0;">
+                     <children>
+                        <Label prefHeight="45.0" prefWidth="52.0" text="Hens" textFill="WHITE">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="20.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <TextField fx:id="henBox" prefHeight="30.0" prefWidth="50.0" promptText="0" text="0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="2.0" right="2.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="57.0" prefWidth="207.0" style="-fx-border-color: Black; -fx-border-radius: 0; -fx-border-width: 0;">
+                     <children>
+                        <Label prefHeight="45.0" prefWidth="63.0" text="Pullets" textFill="WHITE">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="20.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <TextField fx:id="pulletBox" prefHeight="30.0" prefWidth="50.0" promptText="0" text="0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="2.0" right="2.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="57.0" prefWidth="217.0" style="-fx-border-color: Black; -fx-border-radius: 0; -fx-border-width: 0;">
+                     <children>
+                        <Label prefHeight="45.0" prefWidth="90.0" text="Cockerels" textFill="WHITE">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="20.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <TextField fx:id="cockerelBox" prefHeight="30.0" prefWidth="50.0" promptText="0" text="0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="2.0" right="2.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="57.0" prefWidth="200.0" style="-fx-border-color: Black; -fx-border-radius: 0; -fx-border-width: 0;">
+                     <children>
+                        <Label prefHeight="45.0" prefWidth="65.0" text="Chicks" textFill="WHITE">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="20.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <TextField fx:id="chickBox" prefHeight="30.0" prefWidth="50.0" promptText="7" text="0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="2.0" right="2.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="57.0" prefWidth="281.0" style="-fx-border-color: Black; -fx-border-radius: 0; -fx-border-width: 0;">
+                     <children>
+                        <Label prefHeight="45.0" prefWidth="158.0" text="Hatching Eggs *12" textFill="WHITE">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="19.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <TextField fx:id="hatchEggBox" prefHeight="30.0" prefWidth="50.0" promptText="0" text="0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="2.0" right="2.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="250.0" style="-fx-border-color: Black; -fx-border-radius: 0; -fx-border-width: 0;">
+                     <children>
+                        <Label prefHeight="45.0" prefWidth="137.0" text="Eating Eggs *12" textFill="WHITE">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="19.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <TextField fx:id="egg12Box" prefHeight="30.0" prefWidth="50.0" promptText="1" text="0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="2.0" right="2.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="250.0" style="-fx-border-color: Black; -fx-border-radius: 0; -fx-border-width: 0;">
+                     <children>
+                        <Label prefHeight="45.0" prefWidth="132.0" text="Eating Eggs *6" textFill="WHITE">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="19.0" />
+                           </font>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Label>
+                        <TextField fx:id="egg6Box" prefHeight="30.0" prefWidth="50.0" promptText="0" text="0">
+                           <font>
+                              <Font name="Imprint MT Shadow" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="2.0" right="2.0" />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+            </HBox>
+            <Button layoutX="563.0" layoutY="141.0" mnemonicParsing="false" onAction="#addToCart" prefHeight="50.0" prefWidth="200.0" text="Add To Cart">
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <font>
+                  <Font name="Imprint MT Shadow" size="24.0" />
+               </font>
+            </Button>
+            <HBox alignment="CENTER" layoutX="78.0" layoutY="14.0" prefHeight="55.0" prefWidth="578.0">
+               <children>
+                  <Label prefHeight="43.0" prefWidth="368.0" text="Customer Selection" textFill="WHITE">
+                     <font>
+                        <Font name="Imprint MT Shadow" size="36.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="customerSelector" prefHeight="36.0" prefWidth="250.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="423.0" layoutY="691.0" prefHeight="50.0" prefWidth="508.0">
+         <children>
+            <Label prefHeight="43.0" prefWidth="332.0" text="Total Sale Amount" textFill="WHITE">
+               <font>
+                  <Font name="Imprint MT Shadow" size="36.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Label fx:id="profitLabel" prefHeight="43.0" prefWidth="180.0" text="\$ 0.00" textFill="WHITE">
+               <font>
+                  <Font name="Imprint MT Shadow" size="36.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fitHeight="185.0" fitWidth="196.0" layoutX="7.0" layoutY="658.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/logoCoop.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="185.0" fitWidth="196.0" layoutX="1167.0" layoutY="658.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/logoCoop.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
