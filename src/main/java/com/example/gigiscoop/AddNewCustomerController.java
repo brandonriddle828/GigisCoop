@@ -31,7 +31,7 @@ public class AddNewCustomerController implements Initializable
 
     String url = ("jdbc:mysql://localhost:3306/gigiscoop");
     String username = ("root");
-    String password = ("Roxysdad828!");
+    String password = ("1");
 
 
     @FXML
