@@ -239,6 +239,13 @@ public class NewSaleController implements Initializable
             finished.setContentText("You must fill out all fields");
             finished.show();
         }
+        
+        // Fix this mess
+        //      |
+        //      |
+        //     \ /
+        //      V
+        
         try
         {
 
